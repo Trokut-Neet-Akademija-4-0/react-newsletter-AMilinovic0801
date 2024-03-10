@@ -2,16 +2,18 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
 
     nav{
 
-        .header-nav{
+        .nav-container{
             display: flex;
+            flex-direction: column;
             background-color: blue;
             justify-content: space-between;
             margin: 10px;
             border-radius: 10px;
+            
 
             h3{
                 padding: 20px;
@@ -22,17 +24,35 @@
         .nav-list{
             display: flex;
             list-style-type: none;
-            
-
+            justify-content: space-around;
+            padding: 0;
             li{
                 padding: 5px;
-                margin-right: 20px;
+                a{
+                    color: white;
+                }
             }
         }       
     }
 
     .main-blog{
         display: flex;
+
+        .other-pages{
+            color: rgb(114, 75, 3);
+            display: flex;
+            justify-content: center;
+            .inner-blog{
+                background-color:  greenyellow;
+                width: 90%;
+                border-radius: 25px;
+
+                p{
+                    color: white;
+                }
+            }
+            
+        }
 
         .left-container{
             background-color: orange;
