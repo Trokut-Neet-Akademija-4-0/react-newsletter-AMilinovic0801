@@ -3,21 +3,20 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Newsletter } from './Newsletter.jsx'
+import Day3Header from './components/Day3Header.jsx'
+import Day3Footer from './components/Day3Footer.jsx'
+import './components/Day3ComponentS.scss'
 
 function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
       <h1 style={{color: 'white'}}>Vite + React</h1>
-      <Newsletter />
+      {/* <Newsletter /> */}
+      <div className='blog-container'>
+        <Day3Header/>
+        <Day3Footer/>
+      </div>
     </>
   )
 }
